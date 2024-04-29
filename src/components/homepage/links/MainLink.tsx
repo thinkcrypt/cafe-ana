@@ -1,8 +1,8 @@
-import { Text } from '@chakra-ui/react';
+import { Text, TextProps } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
 
-type MainLinkProps = Text & {
+type MainLinkProps = TextProps & {
 	children: string;
 	href: string;
 };
