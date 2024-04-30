@@ -1,5 +1,5 @@
 import MainContainer from '@/components/containers/MainContainer';
-import { NAVBAR_HEIGHT } from '@/lib/constants';
+import { NAVBAR_HEIGHT, NAVBAR_HEIGHT_MOBILE } from '@/lib/constants';
 import { Flex, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 
@@ -8,7 +8,10 @@ const Hero = () => {
 		<main>
 			<MainContainer
 				w='full'
-				h={`calc(100vh - ${NAVBAR_HEIGHT})`}
+				h={{
+					base: `calc(100vh - ${NAVBAR_HEIGHT_MOBILE})`,
+					md: `calc(100vh - ${NAVBAR_HEIGHT})`,
+				}}
 				position={'relative'}
 			>
 				<Flex

@@ -9,7 +9,12 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
 	...props
 }) => {
 	return (
-		<Text fontSize='4rem' fontWeight={400} letterSpacing={'1px'} {...props}>
+		<Text
+			fontSize={{ base: '3rem', md: '4rem' }}
+			fontWeight={400}
+			letterSpacing={'1px'}
+			{...props}
+		>
 			{children}
 		</Text>
 	);

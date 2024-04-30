@@ -11,3 +11,10 @@ export const URL = {
 };
 
 export const NAVBAR_HEIGHT = '120px';
+export const NAVBAR_HEIGHT_MOBILE = '90px';
+
+export const MOBILE_GLOBAL_PADDING_X = 6;
+export const DESKTOP_GLOBAL_PADDING_X = 20;
+
+export const PADDING_Y = 4;
+export const FOOTER_H = '543px';

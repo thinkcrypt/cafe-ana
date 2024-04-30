@@ -13,6 +13,7 @@ const MainLink: React.FC<MainLinkProps> = ({ children, href, ...props }) => {
 				fontSize={'1.5rem'}
 				borderBottom={'2px solid black'}
 				w={'fit-content'}
+				color={'black'}
 				{...props}
 			>
 				{children}
