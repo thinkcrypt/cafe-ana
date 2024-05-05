@@ -3,6 +3,7 @@ import MainContainer from '../containers/MainContainer';
 import { FOOTER_H } from '@/lib/constants';
 import { Flex, Icon, Stack, Text } from '@chakra-ui/react';
 import { PiBowlFoodFill } from 'react-icons/pi';
+import Nav from '../navigation/Nav';
 const Footer = () => {
 	return (
 		<MainContainer minH={{ base: 'auto', md: FOOTER_H }} bgColor={'footer'}>
@@ -38,18 +39,15 @@ const Footer = () => {
 								<Text>01102355663</Text>
 							</Flex>
 						</Flex>
-						<Stack
+						<Nav
 							flex={1}
 							textAlign={'right'}
 							display={{ base: 'none', md: 'flex' }}
 							spacing={2}
 						>
 							{/* navigation */}
-							<Text>Home</Text>
-							<Text>About</Text>
-							<Text>Menu</Text>
-							<Text>Contact Us</Text>
-						</Stack>
+							
+						</Nav>
 					</Flex>
 					<Flex w='full' flexDir={{ base: 'column', md: 'row' }} gap={2}>
 						<Text>© 2024 by Cafeiana.</Text>

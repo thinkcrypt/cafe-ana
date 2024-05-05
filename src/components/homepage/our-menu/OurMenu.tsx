@@ -23,7 +23,7 @@ const OurMenu = () => {
 					content and make changes to the font. I’m a great place for you to
 					tell a story and let your users know a little more about you.`}
 				</Paragraph>
-				<MainLink href='/'>Explore Menu</MainLink>
+				<MainLink href='/menu'>Explore Menu</MainLink>
 			</Stack>
 		</MainContainer>
 	);

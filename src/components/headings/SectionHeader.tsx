@@ -13,6 +13,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
 			fontSize={{ base: '3rem', md: '4rem' }}
 			fontWeight={400}
 			letterSpacing={'1px'}
+			color={'black'}
 			{...props}
 		>
 			{children}

@@ -1,10 +1,11 @@
 import { Text, TextProps } from '@chakra-ui/react';
 import React from 'react';
 
-type ParagraphProps = TextProps & {
-	children: React.ReactNode;
-};
-const Paragraph: React.FC<ParagraphProps> = ({ children, ...props }) => {
+type MenuSectinSubTitleProps = TextProps & {};
+const MenuSectionSubTitle: React.FC<MenuSectinSubTitleProps> = ({
+	children,
+	...props
+}) => {
 	return (
 		<Text fontSize={'1rem'} fontWeight={300} color={'black'} {...props}>
 			{children}
@@ -12,4 +13,4 @@ const Paragraph: React.FC<ParagraphProps> = ({ children, ...props }) => {
 	);
 };
 
-export default Paragraph;
+export default MenuSectionSubTitle;

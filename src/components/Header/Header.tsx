@@ -3,6 +3,8 @@ import { Flex, Icon, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import MainContainer from '../containers/MainContainer';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import Nav from '../navigation/Nav';
+import Link from 'next/link';
 
 const Header = () => {
 	return (
@@ -19,13 +21,12 @@ const Header = () => {
 				zIndex={100}
 				display={{ base: 'none', md: 'flex' }}
 			>
-				<Text fontSize={'5rem'} fontWeight={400}>
-					Cafeiana
-				</Text>
-				<Stack>
-					<Text>Home</Text>
-					<Text>Menu</Text>
-				</Stack>
+				<Link href='/'>
+					<Text fontSize={'5rem'} fontWeight={400}>
+						Cafeiana
+					</Text>
+				</Link>
+				<Nav />
 			</MainContainer>
 			<MainContainer
 				bgColor={'navBackground'}
