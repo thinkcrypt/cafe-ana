@@ -5,6 +5,7 @@ import MainContainer from '../containers/MainContainer';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import Nav from '../navigation/Nav';
 import Link from 'next/link';
+import Sidebar from '../navigation/Sidebar';
 
 const Header = () => {
 	return (
@@ -26,7 +27,13 @@ const Header = () => {
 						Cafeiana
 					</Text>
 				</Link>
-				<Nav />
+				{/* <Nav /> */}
+				<Flex align={'center'} gap={4}>
+					<Link href='/menu'>
+						<Text fontSize={'1.5rem'}>Menu</Text>
+					</Link>
+					<Sidebar />
+				</Flex>
 			</MainContainer>
 			<MainContainer
 				bgColor={'navBackground'}
@@ -39,7 +46,8 @@ const Header = () => {
 				<Text fontSize={'3rem'} fontWeight={400}>
 					Cafeiana
 				</Text>
-				<Icon as={GiHamburgerMenu} name='menu' fontSize={'2rem'} />
+				{/* <Icon as={GiHamburgerMenu} name='menu' fontSize={'2rem'} /> */}
+				<Sidebar />
 			</MainContainer>
 			<Flex
 				w='full'
