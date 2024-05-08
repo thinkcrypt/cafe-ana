@@ -19,38 +19,38 @@ const PhotoGalery = () => {
         photo1 photo5 photo5 photo5
       `}
 				maxW='100vw'
-				maxH={`calc(100vh - ${NAVBAR_HEIGHT})`}
+				// maxH={`calc(100vh - ${NAVBAR_HEIGHT})`}
 				gap={6}
 			>
-				<GridItem area={'photo1'} w='100%' h='100%'>
+				<GridItem area={'photo1'}>
 					<Image
 						src={'/assets/coffee.jpg'}
 						alt={'photo1'}
 						objectFit={'cover'}
 					/>
 				</GridItem>
-				<GridItem area={'photo2'} w='100%' h='100%'>
+				<GridItem area={'photo2'} >
 					<Image
 						src={'/assets/photo2.jpg'}
 						alt={'photo2'}
 						objectFit={'cover'}
 					/>
 				</GridItem>
-				<GridItem area={'photo3'} w='100%' h='100%'>
+				<GridItem area={'photo3'} >
 					<Image
 						src={'/assets/photo3.jpg'}
 						alt={'photo3'}
 						objectFit={'cover'}
 					/>
 				</GridItem>
-				<GridItem area={'photo4'} w='100%' h='100%'>
+				<GridItem area={'photo4'} >
 					<Image
 						src={'/assets/photo4.jpg'}
 						alt={'photo4'}
 						objectFit={'cover'}
 					/>
 				</GridItem>
-				<GridItem area={'photo5'} w='100%' h='100%'>
+				<GridItem area={'photo5'} >
 					<Image
 						src={'/assets/photo5.jpg'}
 						alt={'photo5'}
