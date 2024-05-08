@@ -10,7 +10,9 @@ import React from 'react';
 
 const BookATable = () => {
 	const [activeTimeSlot, setActiveTimeSlot] = React.useState<string>('');
-	const [selectedDate, setSelectedDate] = React.useState<string>(new Date());
+	const [selectedDate, setSelectedDate] = React.useState<string>(
+		new Date().toISOString()
+	);
 	return (
 		<PageLayout>
 			<MainContainer
